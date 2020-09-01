@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img src="/screenshot_1.jpg" width="85%" />
+        <img src="/screenshot_1.jpg" width="70%" />
         <p className={styles.description}>
           Get started <code className={styles.code}>npm i -g gitgud</code>
         </p>

@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  color: white;
+  color: #9e2b28;
 
   max-width: 800px;
   margin-top: 3rem;
@@ -91,7 +91,7 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #116e14;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
@@ -101,8 +101,8 @@
 .card:active {
   /* color: #0070f3;
   border-color: #0070f3; */
-  color: lime;
-  border-color: magenta;
+  color: #189e1d;
+  border-color: #9e2b28;
 }
 
 .card h3 {
