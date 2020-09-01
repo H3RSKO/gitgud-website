@@ -17,7 +17,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <img src="/screenshot_1.jpg" width="70%" /> */}
+        <img
+          className={styles.screenshot}
+          src="/screenshot_1.jpg"
+          width="70%"
+        />
         <div className={styles.description}>
           Get started{" "}
           <code className={styles.code} onClick={copyCodeToClipboard}>

@@ -17,10 +17,11 @@
   position: fixed;
 }
 
-/* .myInput {
-  overflow: hidden;
-  opacity: 0;
-} */
+.screenshot {
+  border: 2px solid #116e14;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
 
 .main {
   padding: 5rem 0;
