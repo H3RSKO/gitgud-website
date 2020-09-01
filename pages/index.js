@@ -3,6 +3,12 @@ import styles from "../styles/Home.module.css";
 import { Button } from "@material-ui/core";
 
 export default function Home() {
+  function copyCodeToClipboard() {
+    let copyText = document.getElementById("myInput");
+    copyText.select();
+    document.execCommand("copy");
+  }
+  copyCodeToClipboard = copyCodeToClipboard.bind(this);
   return (
     <div className={styles.container}>
       <Head>
@@ -11,10 +17,19 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img src="/screenshot_1.jpg" width="70%" />
-        <p className={styles.description}>
-          Get started <code className={styles.code}>npm i -g gitgud</code>
-        </p>
+        {/* <img src="/screenshot_1.jpg" width="70%" /> */}
+        <div className={styles.description}>
+          Get started{" "}
+          <code className={styles.code} onClick={copyCodeToClipboard}>
+            yarn add something
+          </code>
+          <input
+            type="text"
+            value="yarn add something"
+            className={styles.myInput}
+            id="myInput"
+          ></input>
+        </div>
         <div className={styles.grid}>
           <a href="/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
@@ -53,8 +68,8 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          Powered by some org
+          {/* <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} /> */}
         </a>
       </footer>
     </div>
