@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
+  /* padding: 0 0.5rem; */
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #282c34;
 }
 
 .footer {
@@ -60,10 +61,11 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  color: white;
 }
 
 .code {
-  background: #fafafa;
+  background: gray;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -76,6 +78,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  color: white;
 
   max-width: 800px;
   margin-top: 3rem;
@@ -96,8 +99,10 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  /* color: #0070f3;
+  border-color: #0070f3; */
+  color: lime;
+  border-color: magenta;
 }
 
 .card h3 {

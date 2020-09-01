@@ -11,12 +11,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/GitGud-org/GitGud">GitGud!!</a>
-        </h1>
+        <img src="/screenshot_1.jpg" width="85%" />
         <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
+          Get started <code className={styles.code}>npm i -g gitgud</code>
         </p>
         <div className={styles.grid}>
           <a href="/docs" className={styles.card}>
