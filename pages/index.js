@@ -26,13 +26,13 @@ export default function Home() {
           Get started{" "}
           <div className={styles.popOver}>
             <code className={styles.code} onClick={copyCodeToClipboard}>
-              yarn add something
+              npm install -g gitgud
             </code>
             <span>Click to copy</span>
           </div>
           <input
             type="text"
-            value="yarn add something"
+            value="npm install -g gitgud"
             className={styles.myInput}
             id="myInput"
           ></input>

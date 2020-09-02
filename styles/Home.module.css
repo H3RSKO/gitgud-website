@@ -96,10 +96,8 @@
   border-radius: 8px;
   font-size: 1.1rem;
   margin-top: 8px;
-  background: white;
-  border: 2px solid #116e14;
   opacity: 0;
-  color: black;
+  color: red;
   transition: opacity 0.5s ease-out;
 }
 
