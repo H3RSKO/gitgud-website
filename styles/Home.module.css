@@ -6,6 +6,23 @@
   justify-content: center;
   align-items: center;
 }
+.doc__container {
+  background-color: #282c34;
+}
+.doc__navLinks {
+  background-color: #282c34;
+  width: 80vw;
+}
+
+.doc__testing {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.doc__smallTitle {
+  color: limegreen;
+}
+
 .robertDiv {
   visibility: hidden;
   opacity: 0;
