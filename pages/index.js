@@ -24,9 +24,12 @@ export default function Home() {
         />
         <div className={styles.description}>
           Get started{" "}
-          <code className={styles.code} onClick={copyCodeToClipboard}>
-            yarn add something
-          </code>
+          <div className={styles.popOver}>
+            <code className={styles.code} onClick={copyCodeToClipboard}>
+              yarn add something
+            </code>
+            <span>Click to copy</span>
+          </div>
           <input
             type="text"
             value="yarn add something"
@@ -63,7 +66,6 @@ export default function Home() {
             </p>
           </a>
         </div>
-        <Button color="primary">Hello World</Button>
       </main>
 
       <footer className={styles.footer}>
