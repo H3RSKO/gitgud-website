@@ -18,18 +18,54 @@ export default function Docs() {
         <h2 className={styles.doc__smallTitle}>Documentation</h2>
         <div className={styles.doc__flexContainer}>
           <div className={styles.doc__docLinks}>
-            <a onClick={() => setCurrentMd("introduction")}>Introduction</a>
+            {currentMd === "introduction" ? (
+              <a
+                style={{ color: "limegreen" }}
+                onClick={() => setCurrentMd("introduction")}
+              >
+                Introduction
+              </a>
+            ) : (
+              <a onClick={() => setCurrentMd("introduction")}>Introduction</a>
+            )}
             <br />
             <br />
-            <a onClick={() => setCurrentMd("installation")}>
-              Installation & Usage
-            </a>
+            {currentMd === "installation" ? (
+              <a
+                style={{ color: "limegreen" }}
+                onClick={() => setCurrentMd("installation")}
+              >
+                Installation & Usage
+              </a>
+            ) : (
+              <a onClick={() => setCurrentMd("installation")}>
+                Installation & Usage
+              </a>
+            )}
             <br />
             <br />
-            <a onClick={() => setCurrentMd("functionality")}>Functionality</a>
+            {currentMd === "functionality" ? (
+              <a
+                style={{ color: "limegreen" }}
+                onClick={() => setCurrentMd("functionality")}
+              >
+                Functionality
+              </a>
+            ) : (
+              <a onClick={() => setCurrentMd("functionality")}>Functionality</a>
+            )}
             <br />
             <br />
-            <a onClick={() => setCurrentMd("contribution")}>Contribution</a>
+            {currentMd === "contribution" ? (
+              <a
+                style={{ color: "limegreen" }}
+                onClick={() => setCurrentMd("contribution")}
+              >
+                Contribution
+              </a>
+            ) : (
+              <a onClick={() => setCurrentMd("contribution")}>Contribution</a>
+            )}
           </div>
           <div className={styles.doc__testing}>
             {currentMd === "introduction" && <Introduction></Introduction>}

@@ -41,6 +41,9 @@
   color: red;
   cursor: pointer;
 }
+.docs__linkVisited {
+  color: limegreen;
+}
 
 .robertDiv {
   visibility: hidden;
