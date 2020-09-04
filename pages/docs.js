@@ -5,6 +5,7 @@ import Test from "./test.mdx";
 import Introduction from "./introduction.mdx";
 import Installation from "./installation.mdx";
 import Functionality from "./functionality.mdx";
+import Contributing from "./contribution.mdx";
 
 export default function Docs() {
   const [currentMd, setCurrentMd] = useState("introduction");
@@ -26,11 +27,15 @@ export default function Docs() {
             <br />
             <br />
             <a onClick={() => setCurrentMd("functionality")}>Functionality</a>
+            <br />
+            <br />
+            <a onClick={() => setCurrentMd("contribution")}>Contribution</a>
           </div>
           <div className={styles.doc__testing}>
             {currentMd === "introduction" && <Introduction></Introduction>}
             {currentMd === "installation" && <Installation></Installation>}
             {currentMd === "functionality" && <Functionality></Functionality>}
+            {currentMd === "contribution" && <Contributing></Contributing>}
           </div>
         </div>
       </div>
