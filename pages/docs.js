@@ -6,7 +6,7 @@ import Introduction from "./introduction.mdx";
 import Installation from "./installation.mdx";
 import Functionality from "./functionality.mdx";
 import Contributing from "./contribution.mdx";
-import Header from './components/header'
+import Header from "./components/header";
 
 export default function Docs() {
   const [currentMd, setCurrentMd] = useState("introduction");
@@ -15,9 +15,6 @@ export default function Docs() {
   return (
     <div className={styles.doc__container}>
       <Header />
-      <a href="/" >
-        main page
-      </a>
       <div className={styles.doc__navLinks}>
         {/* <h2 className={styles.doc__smallTitle}>Documentation</h2> */}
         <h2 className={styles.doc__smallTitle}>Documentation</h2>

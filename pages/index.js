@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Button } from "@material-ui/core";
-import Header from './components/header'
+import Header from "./components/header";
 
 export default function Home() {
   function copyCodeToClipboard() {
@@ -41,15 +41,15 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about gitgud and its features.</p>
+            <p>Find in-depth information about GitGud and its features.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/aboutus" className={styles.card}>
+            <h3>About us! &rarr;</h3>
+            <p>Learn about GitGud team!</p>
           </a>
 
-          <a
+          {/* <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
@@ -65,7 +65,7 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
+          </a> */}
         </div>
       </main>
 
