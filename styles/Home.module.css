@@ -8,7 +8,10 @@
 }
 .doc__container {
   background-color: #282c34;
+  padding-right: 3em;
+  padding-left: 3em;
 }
+
 .doc__navLinks {
   background-color: #282c34;
 }
@@ -16,7 +19,8 @@
 .doc__testing {
   color: white;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 7em;
+  margin-right: 9em;
   width: 60vw;
   flex: 7;
 }
@@ -32,7 +36,8 @@
 .doc__docLinks {
   justify-self: flex-start;
   flex: 1;
-  margin-left: 10px;
+  margin-left: 2em;
+  font-size: 1.2em;
 }
 .doc__docLinks a {
   color: white;
@@ -204,6 +209,12 @@
 }
 .btn {
   text-transform: lowercase;
+}
+
+.header {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @media (max-width: 600px) {

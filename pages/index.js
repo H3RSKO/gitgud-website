@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Button } from "@material-ui/core";
+import Header from './components/header'
 
 export default function Home() {
   function copyCodeToClipboard() {
@@ -15,7 +16,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Header />
       <main className={styles.main}>
         <img
           className={styles.screenshot}
@@ -40,7 +41,7 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Find in-depth information about gitgud and its features.</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
