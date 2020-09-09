@@ -46,7 +46,7 @@ export default function Home() {
 
           <a href="/aboutus" className={styles.card}>
             <h3>About us! &rarr;</h3>
-            <p>Learn about GitGud team!</p>
+            <p>Meet the GitGud team!</p>
           </a>
 
           {/* <a
