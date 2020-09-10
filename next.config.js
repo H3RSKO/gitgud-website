@@ -1,5 +1,4 @@
 // next.config.js
-// next.config.js
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
 });

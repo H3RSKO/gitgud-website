@@ -5,11 +5,84 @@ export default function Docs() {
   return (
     <div className={styles.doc__container}>
       <Header />
-      <h2 >About us!</h2>
-      <div>
+      <h2 className={styles.doc__smallTitle}>About us!</h2>
+      <div className={styles.grid}>
+        <div className={styles.card}>
           <h2>Robert Harkov</h2>
-          <a href="https://www.linkedin.com/in/robert-harkov/" >LinkeIn</a>
-          <a href="https://github.com/rharkov" target="_blank" rel="noopener noreferrer">github</a>
+          <a
+            href="https://www.linkedin.com/in/robert-harkov/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://github.com/rharkov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+        </div>
+        <div className={styles.card}>
+          <h2>Angela Ratto</h2>
+          <a
+            href="https://www.linkedin.com/in/angelaratto/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://github.com/angelato13"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+        </div>
+        <div className={styles.card}>
+          <h2>Josh Pukin</h2>
+          <a
+            href="https://www.linkedin.com/in/joshuapukin/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://github.com/jpukin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+        </div>
+        <div className={styles.card}>
+          <h2>Yosef Herskovitz</h2>
+          <a
+            href="https://www.linkedin.com/in/yosef-herskovitz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://github.com/H3RSKO"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github
+          </a>
+        </div>
       </div>
     </div>
   );
