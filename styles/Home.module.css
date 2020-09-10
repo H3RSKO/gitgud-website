@@ -213,6 +213,10 @@
   border: 1px solid red;
 }
 
+.aboutus__pic {
+  border-radius: 30px;
+}
+
 .card:hover {
   border: 2px solid red;
   color: #189e1d;

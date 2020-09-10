@@ -10,6 +10,7 @@ export default function Docs() {
       <h2 className={styles.doc__smallTitle}>About us!</h2>
       <div className={styles.grid}>
         <div className={styles.aboutus__card}>
+          <img src="/robert_pic.jpeg" className={styles.aboutus__pic} />
           <h2>Robert Harkov</h2>
           <a
             href="https://www.linkedin.com/in/robert-harkov/"
@@ -29,6 +30,7 @@ export default function Docs() {
           </a>
         </div>
         <div className={styles.aboutus__card}>
+          <img src="/angela_pic.jpeg" className={styles.aboutus__pic} />
           <h2>Angela Ratto</h2>
           <a
             href="https://www.linkedin.com/in/angelaratto/"
@@ -48,6 +50,7 @@ export default function Docs() {
           </a>
         </div>
         <div className={styles.aboutus__card}>
+          <img src="/josh_pic.jpeg" className={styles.aboutus__pic} />
           <h2>Josh Pukin</h2>
           <a
             href="https://www.linkedin.com/in/joshuapukin/"
@@ -67,6 +70,11 @@ export default function Docs() {
           </a>
         </div>
         <div className={styles.aboutus__card}>
+          <img
+            src="/yosef_pic.jpeg"
+            style={{ width: "200px", height: "200px" }}
+            className={styles.aboutus__pic}
+          />
           <h2>Yosef Herskovitz</h2>
           <a
             href="https://www.linkedin.com/in/yosef-herskovitz/"
