@@ -9,6 +9,7 @@ export default function Docs() {
       <Header />
       <h2 className={styles.doc__smallTitle}>About us!</h2>
       <div className={styles.grid}>
+        <div>
         <div className={styles.aboutus__card}>
           <img src="/robert_pic.jpeg" className={styles.aboutus__pic} />
           <h2>Robert Harkov</h2>
@@ -49,6 +50,8 @@ export default function Docs() {
             <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
+        </div>
+        <div>
         <div className={styles.aboutus__card}>
           <img src="/josh_pic.jpeg" className={styles.aboutus__pic} />
           <h2>Josh Pukin</h2>
@@ -92,6 +95,7 @@ export default function Docs() {
           >
             <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
+        </div>
         </div>
       </div>
     </div>
