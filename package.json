@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@mdx-js/loader": "^1.6.16",
     "@next/mdx": "^9.5.3",
-    "@zeit/next-css": "^1.0.1",
     "next": "9.5.2",
     "next-mdx-enhanced": "^4.0.0",
     "react": "16.13.1",

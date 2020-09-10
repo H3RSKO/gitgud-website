@@ -50,6 +50,13 @@
   color: limegreen;
 }
 
+.about__icons {
+  color: limegreen;
+}
+.about__icons:hover {
+  color: red;
+}
+
 .robertDiv {
   visibility: hidden;
   opacity: 0;
@@ -173,7 +180,7 @@
 }
 
 .card {
-  margin: 1rem;
+  margin: 2rem;
   /* flex-basis: 45%; */
   padding: 1.5rem;
   text-align: left;

@@ -1,5 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Header from "./components/header";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 export default function Docs() {
   return (
@@ -14,7 +16,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <LinkedInIcon className={styles.about__icons} /> LinkedIn
           </a>
           <br />
           <br />
@@ -23,7 +25,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
         <div className={styles.card}>
@@ -33,7 +35,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <LinkedInIcon className={styles.about__icons} /> LinkedIn
           </a>
           <br />
           <br />
@@ -42,7 +44,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
         <div className={styles.card}>
@@ -52,7 +54,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <LinkedInIcon className={styles.about__icons} /> LinkedIn
           </a>
           <br />
           <br />
@@ -61,7 +63,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
         <div className={styles.card}>
@@ -71,7 +73,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <LinkedInIcon className={styles.about__icons} /> LinkedIn
           </a>
           <br />
           <br />
@@ -80,7 +82,7 @@ export default function Docs() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            github
+            <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
       </div>
