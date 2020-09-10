@@ -9,7 +9,7 @@ export default function Docs() {
       <Header />
       <h2 className={styles.doc__smallTitle}>About us!</h2>
       <div className={styles.grid}>
-        <div className={styles.card}>
+        <div className={styles.aboutus__card}>
           <h2>Robert Harkov</h2>
           <a
             href="https://www.linkedin.com/in/robert-harkov/"
@@ -28,7 +28,7 @@ export default function Docs() {
             <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
-        <div className={styles.card}>
+        <div className={styles.aboutus__card}>
           <h2>Angela Ratto</h2>
           <a
             href="https://www.linkedin.com/in/angelaratto/"
@@ -47,7 +47,7 @@ export default function Docs() {
             <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
-        <div className={styles.card}>
+        <div className={styles.aboutus__card}>
           <h2>Josh Pukin</h2>
           <a
             href="https://www.linkedin.com/in/joshuapukin/"
@@ -66,7 +66,7 @@ export default function Docs() {
             <GitHubIcon className={styles.about__icons} /> GitHub
           </a>
         </div>
-        <div className={styles.card}>
+        <div className={styles.aboutus__card}>
           <h2>Yosef Herskovitz</h2>
           <a
             href="https://www.linkedin.com/in/yosef-herskovitz/"

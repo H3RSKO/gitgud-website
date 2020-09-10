@@ -191,6 +191,28 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
+.aboutus__card {
+  margin: 2rem;
+  /* flex-basis: 45%; */
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #116e14;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.aboutus__card a:hover {
+  color: limegreen;
+}
+
+.aboutus__card:hover h2 {
+  color: limegreen;
+}
+.aboutus__card:hover {
+  border: 1px solid red;
+}
+
 .card:hover {
   border: 2px solid red;
   color: #189e1d;
