@@ -50,6 +50,13 @@
   color: limegreen;
 }
 
+.about__icons {
+  color: limegreen;
+}
+.about__icons:hover {
+  color: red;
+}
+
 .robertDiv {
   visibility: hidden;
   opacity: 0;
@@ -168,13 +175,13 @@
   flex-wrap: wrap;
   color: #9e2b28;
 
-  max-width: 800px;
+  max-width: 80vw;
   margin-top: 3rem;
 }
 
 .card {
-  margin: 1rem;
-  flex-basis: 45%;
+  margin: 2rem;
+  /* flex-basis: 45%; */
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -184,14 +191,41 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.card:hover,
-.card:focus,
+.aboutus__card {
+  margin: 2rem;
+  /* flex-basis: 45%; */
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #116e14;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.aboutus__card a:hover {
+  color: limegreen;
+}
+
+.aboutus__card:hover h2 {
+  color: limegreen;
+}
+.aboutus__card:hover {
+  border: 1px solid red;
+}
+
+.aboutus__pic {
+  border-radius: 30px;
+}
+
+.card:hover {
+  border: 2px solid red;
+  color: #189e1d;
+}
+
+/* .card:focus,
 .card:active {
   /* color: #0070f3;
-  border-color: #0070f3; */
-  color: #189e1d;
-  /* border-color: #9e2b28; */
-}
+  border-color: #0070f3; */ /* border-color: #9e2b28; */
 
 .card h3 {
   margin: 0 0 1rem 0;
@@ -214,7 +248,7 @@
 .header {
   position: absolute;
   right: 0;
-  top: -2vh;
+  top: 0.5vh;
 }
 
 @media (max-width: 600px) {
@@ -223,5 +257,3 @@
     flex-direction: column;
   }
 }
-
-
