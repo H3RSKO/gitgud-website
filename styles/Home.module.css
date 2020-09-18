@@ -75,8 +75,13 @@
   margin-left: 2em;
   font-size: 1.2em;
 }
-.doc__docLinks a {
+.doc__docLink {
+  display: block;
+  margin: 0 0 20px 0;
   color: white;
+}
+.doc__docLinkActive {
+  color: limegreen;
 }
 .doc__docLinks a:hover {
   color: red;

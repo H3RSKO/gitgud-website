@@ -1,7 +1,5 @@
 import styles from "../styles/Home.module.css";
 const { useState } = require("react");
-import { Button } from "@material-ui/core";
-import Test from "./test.mdx";
 import Introduction from "./introduction.mdx";
 import Installation from "./installation.mdx";
 import Functionality from "./functionality.mdx";
@@ -10,70 +8,54 @@ import Header from "./components/header";
 
 export default function Docs() {
   const [currentMd, setCurrentMd] = useState("introduction");
-  const [activeLink, setActiveLink] = useState(false);
+  const pages = [
+    {
+      page: "introduction",
+      text: "Introduction",
+      data: Introduction,
+    },
+    {
+      page: "installation",
+      text: "Installation & Usage",
+      data: Installation,
+    },
+    {
+      page: "functionality",
+      text: "Functionality",
+      data: Functionality,
+    },
+    {
+      page: "contribution",
+      text: "Contribution",
+      data: Contributing,
+    },
+  ];
 
   return (
     <div className={styles.doc__container}>
       <Header />
       <div className={styles.doc__navLinks}>
-        {/* <h2 className={styles.doc__smallTitle}>Documentation</h2> */}
         <h2 className={styles.doc__smallTitle}>Documentation</h2>
+
         <div className={styles.doc__flexContainer}>
           <div className={styles.doc__docLinks}>
-            {currentMd === "introduction" ? (
-              <a
-                style={{ color: "limegreen" }}
-                onClick={() => setCurrentMd("introduction")}
-              >
-                Introduction
-              </a>
-            ) : (
-              <a onClick={() => setCurrentMd("introduction")}>Introduction</a>
-            )}
-            <br />
-            <br />
-            {currentMd === "installation" ? (
-              <a
-                style={{ color: "limegreen" }}
-                onClick={() => setCurrentMd("installation")}
-              >
-                Installation & Usage
-              </a>
-            ) : (
-              <a onClick={() => setCurrentMd("installation")}>
-                Installation & Usage
-              </a>
-            )}
-            <br />
-            <br />
-            {currentMd === "functionality" ? (
-              <a
-                style={{ color: "limegreen" }}
-                onClick={() => setCurrentMd("functionality")}
-              >
-                Functionality
-              </a>
-            ) : (
-              <a onClick={() => setCurrentMd("functionality")}>Functionality</a>
-            )}
-            <br />
-            <br />
-            {currentMd === "contribution" ? (
-              <a
-                style={{ color: "limegreen" }}
-                onClick={() => setCurrentMd("contribution")}
-              >
-                Contribution
-              </a>
-            ) : (
-              <a onClick={() => setCurrentMd("contribution")}>Contribution</a>
-            )}
+            {pages.map((page) => {
+              return (
+                <a
+                  className={`${styles.doc__docLink}
+                  ${page.page === currentMd ? styles.doc__docLinkActive : ""}`}
+                  onClick={() => setCurrentMd(page.page)}
+                >
+                  {page.text}
+                </a>
+              );
+            })}
           </div>
           <div className={styles.doc__testing}>
-            {currentMd === "introduction" && <Introduction></Introduction>}
-            {currentMd === "installation" && <Installation></Installation>}
-            {currentMd === "functionality" && <Functionality></Functionality>}
-            {currentMd === "contribution" && <Contributing></Contributing>}
+            {React.createElement(
+              pages.filter((page) => page.page === currentMd)[0].data,
+              {}
+            )}
           </div>
         </div>
       </div>
