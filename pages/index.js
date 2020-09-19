@@ -51,6 +51,7 @@ export default function Home() {
             value="npm install -g gitgud"
             className={styles.myInput}
             id="myInput"
+            readOnly
           ></input>
         </div>
         <div className={styles.grid}>
