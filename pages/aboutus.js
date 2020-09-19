@@ -117,6 +117,15 @@ export default function Docs() {
           </div>
         </div>
       </div>
+      <footer className={styles.footer}>
+        <a
+          href="https://github.com/GitGud-org/GitGud"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitGud©
+        </a>
+      </footer>
     </div>
   );
 }
