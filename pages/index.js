@@ -12,17 +12,32 @@ export default function Home() {
   copyCodeToClipboard = copyCodeToClipboard.bind(this);
   return (
     <div className={styles.container}>
+      <div className={styles.header}>
+        <a href="/" className={styles.header__logo}>
+          <img src="/GGLogo-v2.png" />
+        </a>
+
+        <div className={styles.header__sources}>
+          <a
+            href="https://www.npmjs.com/package/gitgud"
+            className={styles.header__source}
+          >
+            <img src="/npmlogo.png" />
+          </a>
+          <a
+            href="https://github.com/GitGud-org/GitGud"
+            className={styles.header__source}
+          >
+            <img src="/github.png" />
+          </a>
+        </div>
+      </div>
       <Head>
-        <title>Create Next App</title>
+        <title>GitGud</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <main className={styles.main}>
-        <img
-          className={styles.screenshot}
-          src="/screenshot_1.jpg"
-          width="70%"
-        />
+        <img className={styles.screenshot} src="/screenshot_1.jpg" />
         <div className={styles.description}>
           Get started{" "}
           <div className={styles.popOver}>
@@ -36,6 +51,7 @@ export default function Home() {
             value="npm install -g gitgud"
             className={styles.myInput}
             id="myInput"
+            readOnly
           ></input>
         </div>
         <div className={styles.grid}>
